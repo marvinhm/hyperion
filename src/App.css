@@ -55,9 +55,26 @@
   width: 100vw;
 }
 
-.left {
+.left,
+.right {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.dropdown {
+  display: flex;
+}
+
+.dropdown-menu {
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  font-family: 'Avenir-Heavy';
 }
 
 .left .logo {
@@ -69,8 +86,38 @@
   width: 100%;
 }
 
-.nav-title h1 {
-  font-size: 10px;
+.nav-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desktop-title h1,
+.mobile-title h1 {
+  font-size: 17px;
+  font-family: 'Avenir-Heavy';
+  margin: 0;
+}
+
+.desktop-title h1 {
+  color: #ee572a;
+}
+
+.right .user-img {
+  margin-right: 14px;  
+}
+
+.right {
+  margin-right: 12px; 
+}
+
+.right p {
+  font-family: 'Avenir-Heavy';
+  margin: 0;
+}
+
+.img-circle {
+  height: 31px;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -84,7 +131,7 @@
     background-repeat: no-repeat;
   }
 
-  .nav-title.mobile {
+  .nav-title.mobile-title {
     display: none;
   }
 }
@@ -97,8 +144,12 @@
     background-repeat: no-repeat;
   }
 
-  .nav-title.mobile {
+  .nav-title.mobile-title {
     display: none;
+  }
+
+  .navigation-bar {
+    height: 6rem;
   }
 }
 
@@ -110,9 +161,14 @@
     background-repeat: no-repeat;
   }
 
-  .nav-title.mobile {
+  .nav-title.mobile-title {
     display: none;
   }
+
+  .navigation-bar {
+    height: 12vh;
+  }
+  
 }
 
 /* Landscape phones and portrait tablets */
@@ -123,24 +179,40 @@
     background-repeat: no-repeat;
   }
 
-  .nav-title.desktop {
+  .nav-title.desktop-title {
     display: none;
-   }
+  }
+
+  .navigation-bar {
+    height: 12vh;
+  }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .left .logo {
     background-image: url('./assets/url.png');
-    background-size: 115px, auto;
+    background-size: 108px, auto;
     background-repeat: no-repeat;
   }
    .logo {
-    width: 12rem;;
+    width: 110px;
    }
 
-   .nav-title.mobile {
+  .mobile-title h1 {
+    font-size: 14px;
+  }
 
+  .img-circle {
+    height: 21px;
+  }
+
+  .right .user-img {
+    margin-right: 7px;
+  }
+
+  .navigation-bar {
+    height: 4vh;
   }
 }
 
