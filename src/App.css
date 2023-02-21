@@ -1,13 +1,16 @@
 #root {
+  width: 100vw;
+  height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
+  background-color: #f5f5f5;
   text-align: center;
 }
 
 .logo {
-  height: 6em;
   padding: 1.5em;
+  width: 20rem;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -40,3 +43,105 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Nav */
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 5vh;
+  width: 100vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.left .logo {
+  margin: 0px 17px;
+  background-position-y: center;
+}
+
+.left {
+  width: 100%;
+}
+
+.nav-title h1 {
+  font-size: 10px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .left .logo {
+    background-image: url('./assets/url@3x.png');
+    background-size: 140px, auto;
+    background-repeat: no-repeat;
+  }
+
+  .nav-title.mobile {
+    display: none;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .left .logo {
+    background-image: url('./assets/url@3x.png');
+    background-size: 140px, auto;
+    background-repeat: no-repeat;
+  }
+
+  .nav-title.mobile {
+    display: none;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .left .logo {
+    background-image: url('./assets/url@2x.png');
+    background-size: 166px 27px;
+    background-repeat: no-repeat;
+  }
+
+  .nav-title.mobile {
+    display: none;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .left .logo {
+    background-image: url('./assets/url@2x.png');
+    background-size: 166px 27px;
+    background-repeat: no-repeat;
+  }
+
+  .nav-title.desktop {
+    display: none;
+   }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .left .logo {
+    background-image: url('./assets/url.png');
+    background-size: 115px, auto;
+    background-repeat: no-repeat;
+  }
+   .logo {
+    width: 12rem;;
+   }
+
+   .nav-title.mobile {
+
+  }
+}
+
+
