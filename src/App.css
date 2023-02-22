@@ -56,7 +56,8 @@
 }
 
 .left,
-.right {
+.right,
+.media {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,6 +100,8 @@
   margin: 0;
 }
 
+/* 787878 grey */
+
 .desktop-title h1 {
   color: #ee572a;
 }
@@ -120,6 +123,92 @@
   height: 31px;
 }
 
+/*  Jumbotron  */
+.jumbotron {
+  background-color: #ffffff;
+}
+
+.php-logo {
+  background-image: url('./assets/beginner-php-fundamentals@3x.png');
+  background-size: 77px, auto;
+  background-repeat: no-repeat;
+}
+
+.btn-orange {
+  background: #ee572a;
+  color: #ffffff;
+  font-family: 'Avenir-Heavy';
+  font-size: 10px;
+  height: 25px;
+  width: 200px;
+  margin: 10px;
+}
+
+.trial-container {
+  text-align: left;
+}
+
+.trial-container .cards {
+  display: flex;
+  flex-direction: row;
+}
+
+/* cards */
+
+.media {
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+.media-body {
+  background: #ffffff;
+  height: 79px;
+    width: 148px;
+}
+.media-title {
+  background: #ffffff;
+  height: 79px;
+  margin-right: 0;
+    width: 116px;
+  background-image: url('./assets/layer-115@3x.png');
+    background-size: 115px, auto;
+    background-repeat: no-repeat;
+}
+
+.media .pull-left {
+  margin-right: 0;
+}
+
+.media-object {
+  width: 84%;
+  margin: 13px;
+}
+
+.title-object {
+  width: 50%;
+  margin: 13px;
+}
+
+
+/* extra coursePage styles */
+
+.btn-group {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn.btn-default {
+  color: #ee572a;
+    background-color: none;
+    border-color: #ee572a;
+    border-radius: 6px !important;
+    background: no-repeat;
+    font-family: 'Avenir-medium';
+    margin: 10px;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -133,6 +222,12 @@
 
   .nav-title.mobile-title {
     display: none;
+  }
+
+  .php-logo {
+    background-image: url('./assets/beginner-php-fundamentals@3x.png');
+    background-size: 140px, auto;
+    background-repeat: no-repeat;
   }
 }
 
@@ -166,7 +261,7 @@
   }
 
   .navigation-bar {
-    height: 12vh;
+    height: 8vh;
   }
   
 }
@@ -184,7 +279,12 @@
   }
 
   .navigation-bar {
-    height: 12vh;
+    height: 8vh;
+  }
+
+  .trial-container .cards {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -213,6 +313,11 @@
 
   .navigation-bar {
     height: 4vh;
+  }
+
+  .trial-container .cards {
+    display: flex;
+    flex-direction: column;
   }
 }
 

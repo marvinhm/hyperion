@@ -1,7 +1,7 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import Navbar from './components/Navbar'
-import './App.css'
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import CourseContent from './components/CourseContent';
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <CourseContent/>
     </div>
   )
 }
