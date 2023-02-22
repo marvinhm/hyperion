@@ -3,7 +3,7 @@ import studentLogo from '../assets/student.png'
 
 function Navbar() {
   return (
-    <div class='navigation-bar'>
+    <div class='nav navigation-bar'>
       <div className='left'>
         <div className='logo'> 
 
