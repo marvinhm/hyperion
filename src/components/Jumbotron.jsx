@@ -1,29 +1,36 @@
 import React from 'react'
+import Card from './Card'
 
 function Jumbotron() {
   return (
     <div className="jumbotron">
-      <div className='row'>
-        <ul class="media-list">
-          <li class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="..." alt="..."/>
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Media heading</h4>
-              ...
-            </div>
-          </li>
-        </ul>
+      <div className='container'>
+        <div className='row top'>
+          <div className='jumboTopImg col-xs-2'>
+          </div>
+          <div className='jumboTopTitle .col-xs-10'>
+            <h4>Web Development Bootcamp Trial</h4>
+            <button className='btn jumboTopBtn'>
+              Continue your trial
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+          </div>
+        </div>
       </div>
       <hr/>
-      <h4>Your Progress</h4> <p>(1/4 complete)</p>
-      <div class="btn-group">
-        <button class="btn btn-default">Industry Knowledge 1</button>
-        <button class="btn btn-default">Industry Knowledge 2</button>
-        <button class="btn btn-default">Industry Knowledge 3</button>
-        <button class="btn btn-default">Industry Knowledge 4</button>
+      <div className='row bottom'>
+        <div className='bottomTitle'>
+          <h4>Your Progress</h4> 
+          <p>(1/4 complete)</p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-default selected glyphicon glyphicon-ok">Industry Knowledge 1</button>
+          <button class="btn btn-default">Industry Knowledge 2</button>
+          <button class="btn btn-default">HTML Basics</button>
+          <button class="btn btn-default">Your First PHP Script</button>
+        </div>
       </div>
+      
     </div>
   )
 }

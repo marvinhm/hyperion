@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from './Card'
 import Jumbotron from './Jumbotron'
-import mobileDev from '../assets/mobile-developer-bootcamp.png'
+import mobileDevImg from '../assets/mobile-developer-bootcamp.png'
+import softwareEngImg from '../assets/software-engineer-bootcamp.png'
 
 function CourseContent() {
   return (
@@ -12,8 +13,8 @@ function CourseContent() {
         <div className='trial-container'>
           <h4>Trial another bootcamp</h4>
           <div className='cards'>
-              <Card bodyImg={mobileDev}/>
-              <Card bodyImg={mobileDev}/>
+              <Card bodyImg={mobileDevImg}/>
+              <Card bodyImg={softwareEngImg}/>
           </div>
         
         </div>        

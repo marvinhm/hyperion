@@ -126,12 +126,43 @@
 /*  Jumbotron  */
 .jumbotron {
   background-color: #ffffff;
+  margin-top: 18px;
+  border-radius: 7px;
+}
+
+.jumbotron p {
+  margin-left: 5px;
+}
+
+.jumboTopImg {
+  background-image: url('./assets/beginner-php-fundamentals@3x.png');
+  background-size: 77px, auto;
+  background-repeat: no-repeat;
+  height: 54px;
+}
+
+.jumboTopTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .php-logo {
   background-image: url('./assets/beginner-php-fundamentals@3x.png');
   background-size: 77px, auto;
   background-repeat: no-repeat;
+}
+
+.bottomTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 8%;
+}
+
+.bottomTitle h4,
+.bottomTitle p {
+  font-size: 21px;
 }
 
 .btn-orange {
@@ -146,11 +177,20 @@
 
 .trial-container {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-bottom: 68px;
+}
+
+.trial-container h4 {
+  margin-left: 8%;
 }
 
 .trial-container .cards {
   display: flex;
   flex-direction: row;
+  margin-top: 28px;
 }
 
 /* cards */
@@ -158,21 +198,22 @@
 .media {
   margin-right: 25px;
   margin-top: 15px;
+  margin-bottom: 14px;
 }
 
 .media-body {
   background: #ffffff;
-  height: 79px;
-    width: 148px;
+  height: 57px;
+  width: 146px;
 }
 .media-title {
   background: #ffffff;
-  height: 79px;
+  height: 57px;
   margin-right: 0;
-    width: 116px;
+  width: 84px;
   background-image: url('./assets/layer-115@3x.png');
-    background-size: 115px, auto;
-    background-repeat: no-repeat;
+  background-size: 84px, auto;
+  background-repeat: no-repeat;
 }
 
 .media .pull-left {
@@ -181,7 +222,8 @@
 
 .media-object {
   width: 84%;
-  margin: 13px;
+  margin-left: 11px;
+  margin-top: 3px;
 }
 
 .title-object {
@@ -201,12 +243,26 @@
 
 .btn.btn-default {
   color: #ee572a;
-    background-color: none;
-    border-color: #ee572a;
-    border-radius: 6px !important;
-    background: no-repeat;
-    font-family: 'Avenir-medium';
-    margin: 10px;
+  background-color: none;
+  border-color: #ee572a;
+  border-radius: 6px !important;
+  background: no-repeat;
+  font-family: 'Avenir-medium';
+  margin: 10px;
+}
+
+.btn-group .btn-default {
+  width: 200px;
+}
+
+.jumboTopBtn {
+  background-color: #ee572a;
+  color: #ffffff;
+}
+
+.selected {
+  background-color: #ee572a !important;
+  color: #ffffff !important;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -263,6 +319,14 @@
   .navigation-bar {
     height: 8vh;
   }
+
+  .trial-container {
+    align-items: center;
+  }
+
+  .trial-container h4 {
+    margin-left: 0;
+  }
   
 }
 
@@ -285,6 +349,14 @@
   .trial-container .cards {
     display: flex;
     flex-direction: column;
+  }
+
+  .trial-container {
+    align-items: center;
+  }
+
+  .trial-container h4 {
+    margin-left: 0;
   }
 }
 
@@ -318,6 +390,14 @@
   .trial-container .cards {
     display: flex;
     flex-direction: column;
+  }
+
+  .trial-container {
+    align-items: center;
+  }
+
+  .trial-container h4 {
+    margin-left: 0;
   }
 }
 
