@@ -1,6 +1,6 @@
 # hyperion
 
-A frontend exercise using React and Bootsrap v3.2.0.
+A frontend exercise using React and Bootstrap v3.2.0.
 
 ## Technologies
 
