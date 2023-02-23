@@ -1,8 +1,8 @@
 import React from 'react'
 import Card from './Card'
 import Jumbotron from './Jumbotron'
-import mobileDevImg from '../assets/mobile-developer-bootcamp.png'
-import softwareEngImg from '../assets/software-engineer-bootcamp.png'
+import mobileDevImg from '../../public/assets/mobile-developer-bootcamp.png'
+import softwareEngImg from '../../public/assets/software-engineer-bootcamp.png'
 
 function CourseContent() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import studentLogo from '../assets/student.png'
+import studentLogo from '../../public/assets/student.png'
 
 function Navbar() {
   return (
