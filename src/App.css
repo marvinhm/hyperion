@@ -1,10 +1,12 @@
 #root {
-  width: 100vw;
-  height: 116vh;
-  max-width: 1280px;
+  height: auto;
   margin: 0 auto;
   background-color: #f5f5f5;
   text-align: center;
+  width: 100vw;
+  max-width: 1280px;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 hr {
@@ -27,6 +29,13 @@ hr {
   transition: filter 300ms;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .row.main {
   padding: 33px;
 }
@@ -43,7 +52,7 @@ hr {
 
 .navigation-bar {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: space-between;
   background-color: #ffffff;
   height: 5vh;
@@ -70,7 +79,7 @@ hr {
 }
 
 .dropdown-menu li {
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
 }
 
 .left .logo {
@@ -91,7 +100,7 @@ hr {
 .desktop-title h1,
 .mobile-title h1 {
   font-size: 17px;
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
   margin: 0;
 }
 
@@ -100,15 +109,15 @@ hr {
 }
 
 .right .user-img {
-  margin-right: 14px;  
+  margin-right: 14px;
 }
 
 .right {
-  margin-right: 12px; 
+  margin-right: 12px;
 }
 
 .right p {
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
   margin: 0;
 }
 
@@ -132,7 +141,7 @@ hr {
 }
 
 .jumboTopImg {
-  background-image: url('../public/assets/beginner-php-fundamentals@3x.png');
+  background-image: url("../public/assets/beginner-php-fundamentals@3x.png");
   background-size: 122px, auto;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -147,13 +156,13 @@ hr {
 }
 
 .jumboTopTitle h4 {
-  font-family: 'Avenir-Medium';
+  font-family: "Avenir-Medium";
   font-size: 20px !important;
   margin-bottom: 20px;
 }
 
 .php-logo {
-  background-image: url('../public/assets/beginner-php-fundamentals@3x.png');
+  background-image: url("../public/assets/beginner-php-fundamentals@3x.png");
   background-size: 77px, auto;
   background-repeat: no-repeat;
 }
@@ -171,15 +180,15 @@ hr {
 }
 
 .bottomTitle h4 {
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
 }
 
 .bottomTitle h4 {
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
 }
 
 .bottomTitle h4 small {
-  font-family: 'Avenir-Light';
+  font-family: "Avenir-Light";
   color: #000000;
 }
 
@@ -190,7 +199,7 @@ hr {
 .btn-orange {
   background: #ee572a;
   color: #ffffff;
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
   font-size: 10px;
   height: 25px;
   width: 200px;
@@ -237,11 +246,11 @@ hr {
 }
 
 .media-title.mobile-dev-img {
-  background-image: url('../public/assets/layer-115@3x.png');
+  background-image: url("../public/assets/layer-115@3x.png");
 }
 
 .media-title.soft-eng-img {
-  background-image: url('../public/assets/layer-114@3x.png');
+  background-image: url("../public/assets/layer-114@3x.png");
 }
 
 .media .pull-left {
@@ -258,7 +267,6 @@ hr {
   width: 50%;
   margin: 13px;
 }
-
 
 /* extra coursePage styles */
 
@@ -291,12 +299,22 @@ hr {
 }
 
 .firstTextBox,
-.secondTextBox,
-.thirdTextBox {
+.secondTextBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
+}
+
+.thirdTextBox{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.thirdTextBox .btn-default {
+  width: fit-content;
 }
 
 .inlineText {
@@ -307,7 +325,7 @@ hr {
 }
 
 .inlineText span {
-  font-family: 'Avenir-Heavy';
+  font-family: "Avenir-Heavy";
   color: #ee572a;
   font-size: 40px;
 }
@@ -321,16 +339,21 @@ hr {
 }
 
 .para-style {
-  font-family: 'Avenir-Medium';
+  font-family: "Avenir-Medium";
   font-size: 15px;
-  color:#787878;
+  color: #787878;
 }
 
 .section-header-style,
-.firstTextBox h4 {
-  font-family: 'Avenir-Heavy';
+.firstTextBox h4,
+.trial-container h4 {
+  font-family: "Avenir-Heavy";
   font-size: 17px;
   margin-bottom: 25px;
+}
+
+.trial-container h4 {
+  margin-bottom: 10px;
 }
 
 .firstRow {
@@ -358,7 +381,7 @@ hr {
 }
 
 .btn {
-  font-family: 'Avenir-Medium';
+  font-family: "Avenir-Medium";
 }
 
 .btn.btn-default {
@@ -367,12 +390,16 @@ hr {
   border-color: #ee572a;
   border-radius: 6px !important;
   background: no-repeat;
-  font-family: 'Avenir-medium';
+  font-family: "Avenir-medium";
   margin: 10px;
 }
 
 .btn-group .btn-default {
-  width: 200px;
+  width: 242px;
+}
+
+.btn-group span.glyphicon {
+  margin-left: 6px;
 }
 
 .jumboTopBtn {
@@ -392,7 +419,7 @@ hr {
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .left .logo {
-    background-image: url('../public/assets/url@3x.png');
+    background-image: url("../public/assets/url@3x.png");
     background-size: 140px, auto;
     background-repeat: no-repeat;
   }
@@ -402,7 +429,7 @@ hr {
   }
 
   .php-logo {
-    background-image: url('../public/assets/beginner-php-fundamentals@3x.png');
+    background-image: url("../public/assets/beginner-php-fundamentals@3x.png");
     background-size: 140px, auto;
     background-repeat: no-repeat;
   }
@@ -411,7 +438,7 @@ hr {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .left .logo {
-    background-image: url('../public/assets/url@3x.png');
+    background-image: url("../public/assets/url@3x.png");
     background-size: 140px, auto;
     background-repeat: no-repeat;
   }
@@ -433,7 +460,7 @@ hr {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .left .logo {
-    background-image: url('../public/assets/url@2x.png');
+    background-image: url("../public/assets/url@2x.png");
     background-size: 166px 27px;
     background-repeat: no-repeat;
   }
@@ -450,25 +477,16 @@ hr {
     align-items: center;
   }
 
-  .trial-container h4 {
-    margin-left: 0;
-  }
-
-  #root {
-    height: 135vh;
-  }
-
   .jumboTopImg {
     height: 83px;
-    width: 17%;
+    width: 20%;
   }
-  
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .left .logo {
-    background-image: url('../public/assets/url@2x.png');
+    background-image: url("../public/assets/url@2x.png");
     background-size: 166px 27px;
     background-repeat: no-repeat;
   }
@@ -497,24 +515,21 @@ hr {
   .jumboTopImg {
     height: 101px;
     width: 33%;
-  }
-
-  #root {
-    height: 154vh;
+    background-size: 111px, auto;
   }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .left .logo {
-    background-image: url('../public/assets/url.png');
+    background-image: url("../public/assets/url.png");
     background-size: 108px, auto;
     background-repeat: no-repeat;
   }
-  
+
   .logo {
     width: 110px;
-   }
+  }
 
   .mobile-title h1 {
     font-size: 14px;
@@ -545,10 +560,6 @@ hr {
     margin-left: 0;
   }
 
-  #root {
-    height: 213vh;
-  }
-
   .jumboTopTitle h4 {
     font-size: 16px !important;
   }
@@ -565,5 +576,3 @@ hr {
     height: 53px;
   }
 }
-
-

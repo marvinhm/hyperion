@@ -1,4 +1,4 @@
-# hyperion
+# HyperionDev
 
 A frontend exercise using React and Bootstrap v3.2.0.
 
