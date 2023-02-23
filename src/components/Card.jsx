@@ -4,7 +4,7 @@ function Card(props) {
   return (
     <div>
     <div class="media">
-      <a class="pull-left media-title" href="#">
+      <a class={props.cardClass} href="#">
       
       </a>
       <div class="media-body">
