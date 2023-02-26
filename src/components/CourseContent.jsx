@@ -73,7 +73,7 @@ function CourseContent() {
           <div className="row basslineClass">
             <div className="">
               <h4 className="section-header-style">
-                Upgrade to the full Bootcamp
+                Upgrade to the Full Bootcamp
               </h4>
             </div>
             <div className="thirdTextBox">

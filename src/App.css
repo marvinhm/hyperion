@@ -36,10 +36,6 @@ hr {
   justify-content: center;
 }
 
-.row.main {
-  padding: 33px;
-}
-
 .card {
   padding: 2em;
 }
@@ -352,6 +348,11 @@ hr {
   margin-bottom: 25px;
 }
 
+.section-header-style,
+.para-style {
+  text-align: left;
+}
+
 .trial-container h4 {
   margin-bottom: 10px;
 }
@@ -480,6 +481,10 @@ hr {
   .jumboTopImg {
     height: 83px;
     width: 20%;
+  }
+
+  .trial-container h4 {
+    margin-left: 0;
   }
 }
 
